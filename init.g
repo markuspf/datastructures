@@ -20,6 +20,9 @@ fi;
 ReadPackage("datastructures", "gap/data.gd");
 
 # interface definitions
+
+ReadPackage("datastructures", "gap/deque.gd");
+
 ReadPackage("datastructures", "gap/queue.gd");
 ReadPackage("datastructures", "gap/heap.gd");
 ReadPackage("datastructures", "gap/prioq.gd");
