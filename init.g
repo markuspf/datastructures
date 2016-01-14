@@ -22,6 +22,8 @@ ReadPackage("datastructures", "gap/data.gd");
 # interface definitions
 
 ReadPackage("datastructures", "gap/deque.gd");
+ReadPackage("datastructures", "gap/hashtable.gd");
+
 # Do we still need queue?
 ReadPackage("datastructures", "gap/heap.gd");
 ReadPackage("datastructures", "gap/prioq.gd");
