@@ -15,13 +15,17 @@
 DeclareCategory("IsDeque", IsCollection);
 BindGlobal( "DequeFamily", NewFamily("DequeFamily"));
 
-DeclareConstructor("NewDeque", [IsDeque]);
+DeclareConstructor("NewDeque", [IsDeque, IsObject, IsObject]);
 
 DeclareOperation("PushFront", [IsDeque, IsObject]);
 DeclareOperation("PushBack", [IsDeque, IsObject]);
 
-DeclareOperation("PopFront", [IsDeque, IsObject]);
-DeclareOperation("PopBack", [IsDeque, IsObject]);
+DeclareOperation("PopFront", [IsDeque]);
+DeclareOperation("PopBack", [IsDeque]);
 
-# Size is an attribute in GAP, and if we want to use it in
-# AttributeStoringRep representations
+DeclareProperty("IsEmpty", IsDeque);
+DeclareAttribute("Length", IsDeque);
+DeclareAttribute("Capacity", IsDeque);
+
+
+

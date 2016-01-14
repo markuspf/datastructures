@@ -164,7 +164,7 @@ end);
 ##
 ## method installation
 ##
-InstallMethod(NewQueue_,
+InstallMethod(NewDeque,
         "for IsPlistQueueRep, a sample object, and a positive integer",
         [IsPlistQueueRep, IsObject, IsPosInt],
 function(filter, sample, capacity)
@@ -181,10 +181,10 @@ InstallMethod(PushFront,
         [IsPlistQueueRep, IsObject],
         PlistQueuePushFront);
 
-InstallMethod(Push,
-        "for IsPlistQueue and an object",
-        [IsPlistQueueRep, IsObject],
-        PlistQueuePushBack);
+#InstallMethod(Push,
+#        "for IsPlistQueue and an object",
+#        [IsPlistQueueRep, IsObject],
+#        PlistQueuePushBack);
 
 InstallMethod(PopFront,
         "for IsPlistQueue and an object",
@@ -196,10 +196,10 @@ InstallMethod(PopBack,
         [IsPlistQueueRep],
         PlistQueuePopBack);
 
-InstallMethod(Pop,
-        "for IsPlistQueue and an object",
-        [IsPlistQueueRep],
-        PlistQueuePopFront);
+#InstallMethod(Pop,
+#        "for IsPlistQueue and an object",
+#        [IsPlistQueueRep],
+#        PlistQueuePopFront);
 
 #InstallMethod(IsEmpty,
 #        "for IsPlistQueue",

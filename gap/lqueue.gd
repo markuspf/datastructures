@@ -12,7 +12,7 @@
 ##
 ## Imported into GAPdata by Markus Pfeiffer
 
-DeclareRepresentation("IsPlistQueueRep", IsQueue and IsPositionalObjectRep, []);
+DeclareRepresentation("IsPlistQueueRep", IsDeque and IsPositionalObjectRep, []);
 
 DeclareGlobalFunction("PlistQueue");
 
