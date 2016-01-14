@@ -1,6 +1,7 @@
 #############################################################################
 ##
-#W  heap.gd                    GAPData                      Markus Pfeiffer
+##                         datastructures package
+#W  heap.gd                                                  Markus Pfeiffer
 ##
 ##
 #Y  Copyright (C) 2014 The GAP Group
@@ -24,9 +25,3 @@ DeclareOperation("Peek", [IsHeap]);
 DeclareOperation("Pop", [IsHeap]);
 # Merge two heaps (of the same type)
 DeclareOperation("Merge", [IsHeap, IsHeap]);
-
-#
-DeclareAttribute("Size", IsHeap);
-
-
-
