@@ -11,7 +11,8 @@ datastructures_la_SOURCES = \
     src/hashmap.c \
     src/hashmap.h \
     src/datastructures.c \
-    src/hashfunctions.c
+    src/hashfunctions.c \
+    src/pairingheap.c
 
 datastructures_la_CPPFLAGS = $(GAP_CPPFLAGS) -DCONFIG_H
 # Note that the latter is only for GAP 4.4.12

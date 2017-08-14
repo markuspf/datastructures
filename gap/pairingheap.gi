@@ -127,7 +127,7 @@ function(heap)
         res := fail;
     else
         res := heap![3][1];
-        heap![3] := merge_pairs(heap![2], heap![3][3]);
+        heap![3] := DS_PairingHeap_MergePairs(heap![2], heap![3][3]);
         heap![1] := heap![3][2];
     fi;
 
