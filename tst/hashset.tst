@@ -60,6 +60,9 @@ true
 gap> IsEmpty(hashset);
 false
 
+gap> AsSet(AsList(hashset)) = AsSet(primes);
+true
+
 # verify
 gap> for p in primes do RemoveSet(hashset, p); od;
 gap> IsEmpty(hashset);

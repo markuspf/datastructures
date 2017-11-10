@@ -291,6 +291,10 @@ false
 gap> ForAny([1001..2000], i -> DS_Hash_Contains(hashmap, String(i)));
 false
 
+#
+gap> AsSet(AsList(hashmap)) = AsSet(List([1..Length(keys)], i -> [keys[i], i^2]));
+true
+
 # delete something
 gap> DS_Hash_Delete(hashmap, keys[100]);
 10000

@@ -69,6 +69,14 @@ InstallOtherMethod( IsEmpty,
     [ IsHashSetRep ],
     ht -> DS_Hash_Used(ht) = 0);
 
+InstallMethod( AsList,
+    "for a hash set",
+    [ IsHashSetRep ],
+    ht -> Filtered(ht![5], x->IsBound(x)));
+
+# note that ht -> Filtered(ht![5], IsBound) does not work,
+# because IsBound is special
+
 # TODO: things we could implement (but do we want to?)
 # AsSet
 # UnitSet

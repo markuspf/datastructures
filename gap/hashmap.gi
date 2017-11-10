@@ -77,3 +77,19 @@ InstallOtherMethod( IsEmpty,
     "for a hash map",
     [ IsHashMapRep ],
     ht -> DS_Hash_Used(ht) = 0);
+
+InstallMethod( AsList,
+    "for a hash map",
+    [ IsHashMapRep ],
+    function(ht)
+        local i, res;
+
+        res := [];
+        for i in [1..Length(ht![5])] do
+            if IsBound(ht![5][i]) then
+                Add(res, [ ht![5][i], ht![6][i] ]);
+            fi;
+        od;
+        return res;
+    end);
+
